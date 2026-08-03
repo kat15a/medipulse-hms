@@ -1,0 +1,6 @@
+{
+  "name": "MediPulse - Hospital Management System",
+  "description": "A modern, responsive, full-featured Hospital Management System built with HTML5, CSS3, Vanilla JavaScript, and Bootstrap 5.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,113 @@
+{
+  "entities": {
+    "users": {
+      "title": "User",
+      "description": "Registered hospital system users (Admins, Doctors, Patients)",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "fullName": { "type": "string" },
+        "role": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "patients": {
+      "title": "Patient",
+      "description": "Hospital patients records",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "age": { "type": "number" },
+        "gender": { "type": "string" },
+        "phone": { "type": "string" },
+        "email": { "type": "string" },
+        "bloodGroup": { "type": "string" },
+        "address": { "type": "string" },
+        "medicalHistory": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name", "email"]
+    },
+    "doctors": {
+      "title": "Doctor",
+      "description": "Medical doctors staff records",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "specialization": { "type": "string" },
+        "experience": { "type": "string" },
+        "fee": { "type": "number" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "rating": { "type": "number" }
+      },
+      "required": ["name", "specialization", "email"]
+    },
+    "appointments": {
+      "title": "Appointment",
+      "description": "Doctor appointments booked by or for patients",
+      "type": "object",
+      "properties": {
+        "patientName": { "type": "string" },
+        "doctorName": { "type": "string" },
+        "date": { "type": "string" },
+        "time": { "type": "string" },
+        "department": { "type": "string" },
+        "status": { "type": "string" },
+        "reason": { "type": "string" }
+      },
+      "required": ["patientName", "doctorName", "date", "status"]
+    },
+    "prescriptions": {
+      "title": "Prescription",
+      "description": "Medical prescriptions issued to patients",
+      "type": "object",
+      "properties": {
+        "patientName": { "type": "string" },
+        "doctorName": { "type": "string" },
+        "date": { "type": "string" },
+        "diagnosis": { "type": "string" },
+        "medicines": { "type": "array" },
+        "instructions": { "type": "string" }
+      },
+      "required": ["patientName", "doctorName", "diagnosis"]
+    },
+    "billing": {
+      "title": "Billing Invoice",
+      "description": "Hospital billing invoices",
+      "type": "object",
+      "properties": {
+        "invoiceNo": { "type": "string" },
+        "patientName": { "type": "string" },
+        "date": { "type": "string" },
+        "consultationFee": { "type": "number" },
+        "medicineFee": { "type": "number" },
+        "labFee": { "type": "number" },
+        "tax": { "type": "number" },
+        "total": { "type": "number" },
+        "status": { "type": "string" },
+        "paymentMethod": { "type": "string" }
+      },
+      "required": ["invoiceNo", "patientName", "total", "status"]
+    },
+    "medical_records": {
+      "title": "Medical Record",
+      "description": "Patient clinical medical histories and vitals",
+      "type": "object",
+      "properties": {
+        "patientName": { "type": "string" },
+        "doctorName": { "type": "string" },
+        "date": { "type": "string" },
+        "diagnosis": { "type": "string" },
+        "bloodPressure": { "type": "string" },
+        "heartRate": { "type": "string" },
+        "temperature": { "type": "string" },
+        "treatment": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "required": ["patientName", "doctorName", "diagnosis"]
+    }
+  }
+}
