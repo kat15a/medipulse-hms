@@ -1,11 +1,5 @@
 # 🏥 MediPulse HMS — Healthcare & Hospital Management System
 
-[![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black)](https://react.dev)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.1-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Express](https://img.shields.io/badge/Express-4.21-000000?logo=express&logoColor=white)](https://expressjs.com/)
-[![Firebase](https://img.shields.io/badge/Firebase-Admin_&_Firestore-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com/)
-[![Gemini AI](https://img.shields.io/badge/Google_Gemini-2.4-8E75B2?logo=google&logoColor=white)](https://ai.google.dev/)
-
 **MediPulse HMS** is an end-to-end, full-stack Hospital Management System designed to streamline clinical workflows, patient care, appointment scheduling, electronic medical records (EHR), billing, and AI-driven clinical insights powered by **Google Gemini AI**.
 
 ---
